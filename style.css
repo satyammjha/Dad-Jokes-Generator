@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Suwannaphum:wght@400;700&display=swap");
+:root {
+  --mainText: "Rubik", sans-serif;
+  --secondary--Text: "Suwannaphum", serif;
+  --primaryColor: rgb(16, 16, 20);
+  --secondaryColor: rgb(47, 47, 47);
+  --buttonBg: rgb(239, 177, 52);
+}
+* {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primaryColor);
+}
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primaryColor);
+  width: 40vw;
+  height: 40vh;
+  margin-left: 30vw;
+  margin-top: 20vh;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px red;
+}
+.container h3 {
+  color: white;
+  font-family: var(--secondary--Text);
+  background: none;
+}
+.container .joke {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 30vw;
+  background: none;
+  margin-top: 5%;
+  font-family: var(--mainText);
+  font-size: 20px;
+}
+.container button {
+  position: relative;
+  display: block;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  font-family: var(--secondary--Text);
+  background-color: var(--buttonBg);
+  outline: none;
+  margin-left: 0%;
+  margin-top: 22%;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.profiles {
+  display: flex;
+  margin-top: 8px;
+  margin-left: 12px;
+}
+.profiles img {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+}
+.container h4 {
+  position: relative;
+  margin-top: 45px;
+  color: white;
+  font-family: var(--secondary--Text);
+  background: none;
+}
+
+@media screen and (max-width: 794px) {
+  .container {
+    width: 82vw;
+    height: 40vh;
+    margin-left: 4vw;
+    box-shadow: 0px 0px 30px red;
+  }
+  .container h3 {
+    margin-top: 14px;
+  }
+  .container .joke {
+    width: 75vw;
+    margin-top: 81px;
+  }
+  .container .button {
+    margin-top: 140px;
+  }
+  .container h4 {
+    margin-top: 36px;
+  }
+}
